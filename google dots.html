@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 750px;
+            height: 400px;
+            background-color: white;
+            border: 2px solid;
+            background-color: aqua;
+        }
+        .a{
+            position: relative;
+            top: 160px;
+            left:100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+            animation:blue 4s infinite 1s;
+        }
+        .b{
+            position: relative;
+            top: 65px;
+            left:250px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            animation: red 4s infinite;
+            animation-delay: 1.2s;
+        }
+        .c{
+            position: relative;
+            bottom: 35px;
+            left:400px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(232, 162, 31);
+            animation: red 4s infinite 1.3s;
+        }
+        .d{
+            position: relative;
+            bottom: 135px;
+            left:550px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color:rgb(53, 175, 53);
+            animation: green 4s infinite 1.4s;
+        }
+        @keyframes blue {
+             from{
+                transform: translatey(0);
+             
+            }
+             to{
+                transform: translatey(-50px);
+                /* transform: translatey(50px); */
+            }
+        }
+        @keyframes red {
+             from{
+                transform: translatey(0);
+             
+            }
+             to{
+                transform: translatey(-40px);}
+             }
+        @keyframes orange {
+             from{
+                transform: translatey(0);
+             
+            }
+             to{
+                transform: translatey(-50px);
+            }
+             }
+      @keyframes green {
+             from{
+                transform: translatey(0);
+             
+            }
+             to{
+                transform: translatey(-50px);
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+</body>
+</html>
